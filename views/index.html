@@ -1,8 +1,30 @@
 {% extends 'layout.html' %}
+{% import 'macros/navbar.html' as navbar %}
 
 {% block content %}
-  <div class="container">
-    <h1>Nick's Personal Site!</h1>
-    <p> Welcome! </p>
+  <div class="header-container">
+    {{ navbar.nav() }}
+
+    <div class="container-fluid">
+      <section id="intro" class="nav-padding">
+        <div class="row-fluid">
+          <div class="span6 span-center">
+            <div id="intro-title" class="intro-title non-mobile">
+              <h1 class="non-tablet-mobile">
+                Nick Dupoux
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span-center">
+            <div id="intro-tagline" class="">
+            <p class="intro-tagline intro-text">This is my personal site homie</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+
 {% endblock %}
