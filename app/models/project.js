@@ -16,15 +16,6 @@ var projectSchema = new Schema({
     type: String,
     default: ''
   },
-  start: {
-    type: Date,
-    default: Date.now,
-    required: 'Start date must be provided.'
-  },
-  end: {
-    type: Date,
-    default: null
-  },
   links: {
     type: [String],
     default: null

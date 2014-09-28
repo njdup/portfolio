@@ -8,9 +8,14 @@ var swig = require('swig');
 var consolidate = require('consolidate');
 var mongoose = require('mongoose');
 
+
 var config = require('./config/config');
 var app = express();
 var db = mongoose.connect(config.db);
+
+// Seed the database with initial data
+// TODO: Fix this so it only runs once if needed
+require('./config/seed')();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
