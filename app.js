@@ -6,10 +6,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
 var consolidate = require('consolidate');
+var mongoose = require('mongoose');
 
-var routes = require('./routes/index');
-
+var config = require('./config/config');
 var app = express();
+var db = mongoose.connect(config.db);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,7 +24,9 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+// Set up all routes
+app.use('/', require('./app/routes/index'));
+app.use('/projects', require('./app/routes/projects'));
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
