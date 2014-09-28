@@ -12,4 +12,40 @@
       </div>
     </div>
   </div>
+
+  <div class="main-body-container">
+    <section class="main-info">
+      <div class="container">
+        <p class="lead">
+          I'm a junior at <b>Stanford University</b> studying computer science and
+          working to make a name for myself in the everchanging tech scene of
+         <b>Silicon Valley</b>.
+        </p>
+        <p class="lead">
+          I'm passionate about programming, hacking, and the impact technology can have on the world.
+          Right now, my interests - which are ever-evolving - center around virtual reality, ed-tech, and gov-tech.
+        </p>
+        <p class="lead">
+          My short-term goals are focused on improving my abilities as a software engineer and hacker through working on
+          exciting projects and challenging problems.
+          My long-term goals include working in the fast-paced environment of a startup, working in the Space industry, and
+          one day attending graduate school to obtain a Ph.D.
+        </p>
+      </div>
+    </section>
+
+    <section class="alternate-info">
+      <div class="container">
+        <h2 class="section-header">Current Projects</h2>
+        <div class="projects-list">
+          {% for project in projects %}
+            {% if loop.first %}<ul>{% endif %}
+            <li></li>
+            {% if loop.last %}</ul>{% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+  </div>
 {% endblock %}
