@@ -5,12 +5,14 @@
     <title>{% block title %} Dup {% endblock %}</title>
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
-    {% block head %}{% endblock %}
+    <link rel="stylesheet" href="/stylesheets/style.css"></link>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"></link>
 
     <!-- JS files -->
-    <script type="text/javascript" href="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    {% block head %}{% endblock %}
 
   </head>
   <body>
@@ -18,4 +20,8 @@
     {% block content %}{% endblock %}
 
   </body>
+
+  <footer>
+    {% block footer %}{% endblock %}
+  </footer>
 </html>

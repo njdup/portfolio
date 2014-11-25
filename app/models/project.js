@@ -12,11 +12,19 @@ var projectSchema = new Schema({
     default: '',
     required: 'Project title must be provided'
   },
+  tagline: {
+    type: String,
+    default: ''
+  },
   description: {
     type: String,
     default: ''
   },
   links: {
+    type: [String],
+    default: null
+  },
+  skills: {
     type: [String],
     default: null
   }

@@ -21,6 +21,9 @@
 .header-jumbotron {
   text-align: center;
   margin-bottom: 0px !important;
+  background-image: url('/images/portrait_landscape.jpg');
+  background-size: 100%;
+  height: 520px;
 }
 
 /* Styling for main body */
@@ -38,9 +41,26 @@ section {
   color: #D93537;
 }
 
+.info .container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .main-info {
 }
 
 .alternate-info {
   background-color: #ebeeed;
+}
+
+.project-header h3 {
+  display: inline;
+}
+
+.project-header p {
+  display: inline;
+}
+
+.projects-list ul {
+  list-style: none;
 }

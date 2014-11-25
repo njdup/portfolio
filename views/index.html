@@ -1,6 +1,10 @@
 {% extends 'layout.html' %}
 {% import 'macros/navbar.html' as navbar %}
 
+{% block head %}
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+{% endblock %}
+
 {% block content %}
   <div class="header-container">
     {{ navbar.nav() }}
@@ -13,8 +17,8 @@
     </div>
   </div>
 
-  <div class="main-body-container">
-    <section class="main-info">
+  <div class="main-body-container" id="main-body">
+    <section class="info main-info">
       <div class="container">
         <p class="lead">
           I'm a junior at <b>Stanford University</b> studying computer science and
@@ -34,13 +38,20 @@
       </div>
     </section>
 
-    <section class="alternate-info">
+    <section class="info alternate-info">
       <div class="container">
-        <h2 class="section-header">Current Projects</h2>
+        <h1 class="section-header">Current Projects</h1>
+        <p class="lead">
+          A list of things that I'm working on, either through school, work, or personal ventures.
+        </p>
         <div class="projects-list">
           {% for project in projects %}
             {% if loop.first %}<ul>{% endif %}
-            <li></li>
+            <li>
+              <div class="project-header"><h3>{{ project.title }}</h3> - <p>{{ project.tagline }}</p></div>
+              <p>{{ project.description }}</p>
+              <p> Skills: {% for skill in project.skills %} {{ skill }} {% endfor %}</p>
+            </li>
             {% if loop.last %}</ul>{% endif %}
           {% endfor %}
         </div>

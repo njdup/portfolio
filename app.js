@@ -26,6 +26,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Set up all routes
@@ -63,4 +64,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
+var port = process.env.PORT || 8080;
+app.listen(port)
+console.log("Server listening on port: " + port);
 module.exports = app;
