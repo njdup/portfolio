@@ -45,13 +45,17 @@
           A list of things that I'm working on, either through school, work, or personal ventures.
         </p>
         <div class="projects-list">
+          <div class="projects-divider"></div>
           {% for project in projects %}
             {% if loop.first %}<ul>{% endif %}
             <li>
-              <div class="project-header"><h3>{{ project.title }}</h3> - <p>{{ project.tagline }}</p></div>
+              <div class="project-header"><h3>{{ project.title }}</h3>  &nbsp;&nbsp; <p><em>{{ project.tagline }}</em></p></div>
+              <br/>
               <p>{{ project.description }}</p>
-              <p> Skills: {% for skill in project.skills %} {{ skill }} {% endfor %}</p>
+              <div class="skills-list"><h4>Tech:</h4><p>&nbsp;&nbsp;{{ project.skills|striptags|join(', ') }}</p></div>
             </li>
+            <br/>
+            <div class="projects-divider"></div>
             {% if loop.last %}</ul>{% endif %}
           {% endfor %}
         </div>

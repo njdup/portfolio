@@ -50,7 +50,9 @@ section {
 }
 
 .alternate-info {
-  background-color: #ebeeed;
+  /*background-color: #ebeeed;*/
+  background-color: #0e1111;
+  color: #dddddd;
 }
 
 .project-header h3 {
@@ -63,4 +65,18 @@ section {
 
 .projects-list ul {
   list-style: none;
+}
+
+.skills-list * {
+  display: inline;
+}
+
+.skills-list p {
+  color: #D93537;
+}
+
+.projects-divider {
+  background: url('/images/fancy_divider.png') no-repeat scroll center center transparent;
+  width: 100%;
+  height: 50px;
 }
