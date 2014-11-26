@@ -52,6 +52,12 @@
               <div class="project-header"><h3>{{ project.title }}</h3>  &nbsp;&nbsp; <p><em>{{ project.tagline }}</em></p></div>
               <br/>
               <p>{{ project.description }}</p>
+              <p>Check the project out at these links:</p>
+              <ul>
+              {% for link in project.links %}
+                <li>{{ link.name }}</li>
+              {% endfor %}
+              </ul>
               <div class="skills-list"><h4>Tech:</h4><p>&nbsp;&nbsp;{{ project.skills|striptags|join(', ') }}</p></div>
             </li>
             <br/>

@@ -21,8 +21,9 @@ var projectSchema = new Schema({
     default: ''
   },
   links: {
-    type: [String],
-    default: null
+    type: [],
+    default: null,
+    strict: false
   },
   skills: {
     type: [String],

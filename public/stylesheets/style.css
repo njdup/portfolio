@@ -1,7 +1,7 @@
 /* Styling for the header */
 
 .navbar-brand {
-  color: #d93537;
+  color: #dc3522;
   font-weight: bold;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .nav a {
-  color: #D93537;
+  color: #dc3522;
 }
 
 .nav a:hover {
@@ -21,7 +21,7 @@
 .header-jumbotron {
   text-align: center;
   margin-bottom: 0px !important;
-  background-image: url('/images/portrait_landscape.jpg');
+  background-image: url('/images/sanfrancisco_landscape.jpg');
   background-size: 100%;
   height: 520px;
 }
@@ -38,7 +38,7 @@ section {
 }
 
 .main-body-container b {
-  color: #D93537;
+  color: #dc3522;
 }
 
 .info .container {
@@ -51,7 +51,7 @@ section {
 
 .alternate-info {
   /*background-color: #ebeeed;*/
-  background-color: #0e1111;
+  background-color: #1e1e20;
   color: #dddddd;
 }
 
@@ -72,11 +72,11 @@ section {
 }
 
 .skills-list p {
-  color: #D93537;
+  color: #D9CB9E;
 }
 
 .projects-divider {
-  background: url('/images/fancy_divider.png') no-repeat scroll center center transparent;
+  /*background: url('/images/fancy_divider.png') no-repeat scroll center center transparent;*/
   width: 100%;
   height: 50px;
 }
