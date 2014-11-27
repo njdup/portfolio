@@ -40,6 +40,33 @@
 
     <section class="info alternate-info">
       <div class="container">
+        <h1 class="section-header">Skills</h1>
+        <p class="lead">
+            A list of what I consider my note-worthy skills.
+        </p>
+        <div class="skills-list">
+          {% for skill in skills %}
+            {% if loop.first %}<ul>{% endif %}
+            <li>
+              <h3>{{ skill.name }}</h3>
+              <br/>
+              <p>{{ skill.description }}
+            </li>
+            {% if loop.last %}
+              </ul>
+            {% else %}
+              <div class="projects-divider"></div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="info main-info">
+    </section>
+
+    <section class="info alternate-info">
+      <div class="container">
         <h1 class="section-header">Current Projects</h1>
         <p class="lead">
           A list of things that I'm working on, either through school, work, or personal ventures.
@@ -52,13 +79,18 @@
               <div class="project-header"><h3>{{ project.title }}</h3>  &nbsp;&nbsp; <p><em>{{ project.tagline }}</em></p></div>
               <br/>
               <p>{{ project.description }}</p>
-              <p>Check the project out at these links:</p>
-              <ul>
-              {% for link in project.links %}
-                <li>{{ link.name }}</li>
-              {% endfor %}
-              </ul>
-              <div class="skills-list"><h4>Tech:</h4><p>&nbsp;&nbsp;{{ project.skills|striptags|join(', ') }}</p></div>
+
+              <div class="links-list">
+                <p>Check the project out at these links:</p>
+                <ul>
+                {% for link in project.links %}
+                  <li><a href='{{ link.url }}'>{{ link.name }}</a></li>
+                {% endfor %}
+                </ul>
+              </div>
+
+              <br/>
+              <div class="project-skills-list"><h4>Tech:</h4><p>&nbsp;&nbsp;{{ project.skills|striptags|join(', ') }}</p></div>
             </li>
             <br/>
             <div class="projects-divider"></div>

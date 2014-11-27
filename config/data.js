@@ -29,5 +29,23 @@ module.exports = {
       ],
       'skills': ['javascript', 'node.js', 'mongodb', 'express.js']
     }
+  ],
+  skills: [
+    { 'name': 'python',
+      'type': 'programming language',
+      'description': 'Like a star-crossed lover, I\'ve given my heart to python and haven\'t regretted it once. It was my first programming language, and while others have since stolen me away for bits of time, I\'ve always come back to it. I guess I\'ll never be able to resist such beautiful syntax and elegant design.'
+    },
+    { 'name': 'javascript',
+      'type': 'programming language',
+      'description': 'As far as languages go, javascript is just plain fun. I keep it in my toolbelt as a sort of swiss army knife, versatile enough to be whipped out in a variety of situations and powerful enough to always get the job done.'
+    },
+    { 'name': 'django',
+      'type': 'framework',
+      'description': 'Most of my full stack web dev experience has been spent in django-land. I\'ve grown to love its power and ease, but lately have been put off by some of its bloated qualities as I\'ve shifted further towards an appreciation of lightweight applications.'
+    },
+    { 'name': 'node.js',
+      'type': 'framework',
+      'description': 'When it\'s time to get down to business and serve up a reliable, simple web application, I turn to node.js. My experience with it is still pretty elementary, but I\'ve enjoyed it a lot in the work that I have done with it, including the development of this site.'
+    }
   ]
 };

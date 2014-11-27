@@ -1,7 +1,7 @@
 /* Styling for the header */
 
 .navbar-brand {
-  color: #dc3522;
+  color: #374140;
   font-weight: bold;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .nav a {
-  color: #dc3522;
+  color: #374140;
 }
 
 .nav a:hover {
@@ -42,8 +42,8 @@ section {
 }
 
 .info .container {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .main-info {
@@ -57,6 +57,7 @@ section {
 
 .project-header h3 {
   display: inline;
+  color: #dc3522;
 }
 
 .project-header p {
@@ -67,16 +68,35 @@ section {
   list-style: none;
 }
 
-.skills-list * {
+.project-skills-list * {
   display: inline;
 }
 
-.skills-list p {
-  color: #D9CB9E;
+.project-skills-list p {
+  /*color: #D9CB9E;*/
+}
+
+.links-list * {
+  display: inline;
+}
+
+.links-list ul {
+  padding-left: 5px;
 }
 
 .projects-divider {
   /*background: url('/images/fancy_divider.png') no-repeat scroll center center transparent;*/
   width: 100%;
   height: 50px;
+}
+
+.skills-list ul {
+  list-style: none;
+}
+
+.skills-list h3 {
+  color: #dc3522;
+}
+
+.section-header {
 }
