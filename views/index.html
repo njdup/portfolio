@@ -12,14 +12,28 @@
     <div class="jumbotron masthead header-jumbotron">
       <div class="container">
         <h1>Nick Dupoux</h1>
-        <p class="lead">Pythonista. Software Engineer. Aspiring Entrepreneur.</p>
+        <p class="lead">Pythonista. Software Engineer. Zombie Aficionado.</p>
+      </div>
+      <div class="container">
+        <div class="icons-container">
+          <div class="blog-link">
+            <a href="http://blog.njdup.me"><i class="fa fa-pencil-square fa-5x"></i></a>
+            <p class="lead">My blog</p>
+          </div>
+          <div class="knowledgebase-link">
+            <a href="http://njdup-knowledgebase.herokuapp.com"><i class="fa fa-database fa-5x"></i></a>
+            <p class="lead">My knowledge</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="main-body-container" id="main-body">
     <section class="info main-info">
+      <a name="about"></a>
       <div class="container">
+        <h1 class="section-header">About Me</h1>
         <p class="lead">
           I'm a junior at <b>Stanford University</b> studying computer science and
           working to make a name for myself in the everchanging tech scene of
@@ -39,23 +53,43 @@
     </section>
 
     <section class="info alternate-info">
+      <a name="skills"></a>
       <div class="container">
         <h1 class="section-header">Skills</h1>
         <p class="lead">
             A list of what I consider my note-worthy skills.
         </p>
+
+        <div class="projects-divider"></div>
+
         <div class="skills-list">
-          {% for skill in skills %}
+          <h2 class="section-subheader">Languages</h2>
+          {% for lang in skills.languages %}
             {% if loop.first %}<ul>{% endif %}
             <li>
-              <h3>{{ skill.name }}</h3>
+              <h3>{{ lang.name }}</h3>
               <br/>
-              <p>{{ skill.description }}
+              <p>{{ lang.description }}</p>
             </li>
             {% if loop.last %}
               </ul>
             {% else %}
-              <div class="projects-divider"></div>
+            {% endif %}
+          {% endfor %}
+
+          <div class="projects-divider"></div>
+
+          <h2 class="section-subheader">Frameworks</h2>
+          {% for framework in skills.frameworks %}
+            {% if loop.first %}<ul>{% endif %}
+            <li>
+              <h3>{{ framework.name }}</h3>
+              <br/>
+              <p>{{ framework.description }}</p>
+            </li>
+            {% if loop.last %}
+              </ul>
+            {% else %}
             {% endif %}
           {% endfor %}
         </div>
@@ -63,9 +97,36 @@
     </section>
 
     <section class="info main-info">
+      <a name="interests"></a>
+      <div class="container">
+        <h1 class="section-header">My Interests</h1>
+        <p class="lead">
+          Everything that comes to mind when I'm confronted with the age-old question: "Well, what interests you, really?"
+        </p>
+
+        <div class="projects-divider"></div>
+
+        <div class="interests-list">
+
+        {% for interest in interests %}
+          {% if loop.first %}<ul>{% endif %}
+          <li>
+            <h3>{{ interest.name }}</h3>
+            <br/>
+            <p>{{ interest.description }}</p>
+          </li>
+          {% if loop.last %}
+            </ul>
+          {% endif %}
+
+        {% endfor %}
+
+        </div>
+      </div>
     </section>
 
     <section class="info alternate-info">
+      <a name="projects"></a>
       <div class="container">
         <h1 class="section-header">Current Projects</h1>
         <p class="lead">

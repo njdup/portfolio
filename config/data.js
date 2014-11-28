@@ -47,5 +47,11 @@ module.exports = {
       'type': 'framework',
       'description': 'When it\'s time to get down to business and serve up a reliable, simple web application, I turn to node.js. My experience with it is still pretty elementary, but I\'ve enjoyed it a lot in the work that I have done with it, including the development of this site.'
     }
+  ],
+  interests: [
+    {
+      'name': 'Open Source',
+      'description': 'I really like open source stuff!'
+    }
   ]
 };

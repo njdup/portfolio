@@ -4,6 +4,7 @@
 
 var Project = require('../app/models/project');
 var Skill = require('../app/models/skill');
+var Interest = require('../app/models/interest');
 var mongoose = require('mongoose');
 
 
@@ -14,6 +15,9 @@ module.exports = function seedDatabase(db) {
     if (err) { console.log(err); };
   });
   Skill.remove({}, function(err) {
+    if (err) { console.log(err); };
+  });
+  Interest.remove({}, function(err) {
     if (err) { console.log(err); };
   });
 
@@ -34,6 +38,16 @@ module.exports = function seedDatabase(db) {
     var skill = new Skill(data);
     skill.save(function(err) {
       if (err) { console.log('Error occurred seeding database!'); }
+    });
+  });
+
+  console.log('Seeding interests collection...');
+  var interestData = require('./data').interests;
+
+  interestData.forEach(function(data) {
+    var interest = new Interest(data);
+    interest.save(function(err) {
+      if (err) { console.log('Error occurred while seeding database!'); }
     });
   });
 
