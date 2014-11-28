@@ -14,16 +14,23 @@ module.exports = function seedDatabase(db) {
   Project.remove({}, function(err) {
     if (err) { console.log(err); };
   });
+
   Skill.remove({}, function(err) {
     if (err) { console.log(err); };
   });
+
   Interest.remove({}, function(err) {
     if (err) { console.log(err); };
   });
 
-  console.log("Seeding projects collection...");
-  var projectData = require('./data').projects;
+  // Proceed once everything in database dropped
 
+  var data = require('./data');
+  var projectData = data.projects;
+  var skillData = data.skills;
+  var interestData = data.interests;
+
+  console.log("Seeding projects collection...");
   projectData.forEach(function(data) {
     var project = new Project(data);
     project.save(function(err) {
@@ -32,8 +39,6 @@ module.exports = function seedDatabase(db) {
   });
 
   console.log("Seeding skills collection...");
-  var skillData = require('./data').skills;
-
   skillData.forEach(function(data) {
     var skill = new Skill(data);
     skill.save(function(err) {
@@ -42,8 +47,6 @@ module.exports = function seedDatabase(db) {
   });
 
   console.log('Seeding interests collection...');
-  var interestData = require('./data').interests;
-
   interestData.forEach(function(data) {
     var interest = new Interest(data);
     interest.save(function(err) {
