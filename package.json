@@ -3,9 +3,6 @@
   "author": "Dup <njdupp@gmail.com>",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
   "dependencies": {
     "express": "~4.2.0",
     "static-favicon": "~1.0.0",
@@ -17,5 +14,8 @@
     "consolidate": "0.10.x",
     "bower": "1.3.x",
     "mongoose": "3.8.x"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
