@@ -14,7 +14,7 @@ var app = express();
 var db = mongoose.connect(config.db);
 
 // Seed the database with initial data
-require('./config/seed')(db);
+//require('./config/seed')(db);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
