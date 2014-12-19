@@ -5,7 +5,7 @@ Configures database file needed for migrations
 import os
 import urlparse
 
-result_file = '../db_config.json'
+result_file = './db_config.json'
 mongo_uri = os.environ['MONGOLAB_URI']
 
 if __name__ == '__main__':
