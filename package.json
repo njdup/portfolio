@@ -18,6 +18,6 @@
     "mongodb": "*"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install; pip install urlparse; python scripts/create_db_config.py"
+    "postinstall": "./node_modules/bower/bin/bower install; python scripts/create_db_config.py"
   }
 }

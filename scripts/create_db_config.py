@@ -12,3 +12,6 @@ if __name__ == '__main__':
     db_url = urlparse.urlparse(mongo_uri)
 
     print 'Database url: ' + str(db_url)
+
+    print db_url.hostname
+    print db_url.path[1:]
