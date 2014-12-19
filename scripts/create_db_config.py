@@ -11,7 +11,19 @@ mongo_uri = os.environ['MONGOLAB_URI']
 if __name__ == '__main__':
     db_url = urlparse.urlparse(mongo_uri)
 
-    print 'Database url: ' + str(db_url)
+    host = db_url.hostname
+    db_name = db_url.path[1:]
+    port = db_url.port
 
-    print db_url.hostname
-    print db_url.path[1:]
+    # Write out the config file
+    with open(result_file, 'w+') as output:
+        output.write('{ "database": {')
+        output.write(' "host": "' + str(host) + '",')
+        output.write(' "db": "' + str(db_name) + '",')
+        output.write(' "port": "' + str(port) + '"')
+        output.write(' } }')
+
+    # Now visually confirm that the file properly written...
+    with open(result_file, 'r') as result:
+        content = result.read()
+        print 'Resulting configuration file: \n {}'.format(content)
