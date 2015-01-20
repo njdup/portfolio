@@ -9,5 +9,5 @@ exports.up = function(db, next){
 
 exports.down = function(db, next){
   var projects = mongodb.Collection(db, 'projects');
-  projects.remove(next);
+  projects.remove({}, next);
 };

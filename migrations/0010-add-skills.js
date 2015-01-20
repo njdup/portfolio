@@ -9,5 +9,5 @@ exports.up = function(db, next){
 
 exports.down = function(db, next){
   var skills = mongodb.Collection(db, 'skills');
-  skills.remove(next);
+  skills.remove({}, next);
 };
