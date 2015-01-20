@@ -1,6 +1,6 @@
 {
     "dbSettings": {
         "host": "localhost",
-        "db": "portfolio-dev-9999"
+        "db": "portfolio-dev"
     }
 }
