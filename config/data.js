@@ -5,8 +5,8 @@
 module.exports = {
   projects: [
     { 'title': 'SheSays',
-      'tagline': 'An awesome startup',
-      'description': 'My kickass startup',
+      'tagline': 'An anonymous review platform for women in technology',
+      'description': 'Initially built at DubHacks 2014 and presented at AngelHack Global Demo Day 2014. SheSays is an anonymous forum to rate and review tech companies based on women’s experiences. By focusing on these voices, we provide a service to those entering tech and use often overlooked stories to take inclusive workspaces from voluntary to essential.',
       'links': [
         {'name': 'website', 'url':'https://shesays.co'}
       ],
@@ -61,7 +61,23 @@ module.exports = {
   interests: [
     {
       'name': 'Open Source',
-      'description': 'I really like open source stuff!'
+      'description': 'I really like open source stuff! I\'m incredibly intrigued by he Open Source model of software development and the way in which it can spread knowledge, provide powerful tools accessible to all, and foster strong communities of developers united to work for a common cause. I\'ve made contributions to open source projects such as the EdX platform, and hope to continue contributing to the world of open source, both as an active developer on projects and as a creator of new open source technology.'
+    },
+    {
+      'name': 'Graphic Novels/Manga',
+      'description': 'I\'m a HUGE fan of graphic mediums of story-telling. I think my love of graphic novels and Japanese manga can be described as a downright addiciton at times. Right now, my obsession is focused on The Walking Dead and Welcome to the N.H.K. If you haven\'t read (or watched the televison/anime adapations) of either, I highly recommend that you do!'
+    },
+    {
+      'name': 'Art',
+      'description': 'Sketching was a huge passion of mine growing up, and I\'m happy to say that its a passion that has been rekindled recently. I\'ve started and completed several sketches, and hope to build an online portfolio of them soon. Stay tuned for more!'
+    },
+    {
+      'name': 'InfoSec',
+      'description': 'Description coming soon!'
+    },
+    {
+      'name': 'Virtual Reality',
+      'description': 'Description coming soon!'
     }
   ]
 };

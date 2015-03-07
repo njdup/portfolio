@@ -9,7 +9,7 @@ var path = require('path');
 /* GET home page. */
 router.get('/', function(req, res) {
 
-  // TODO: This method sucks. Use angular instead :)
+  // TODO: This method sucks. Use ember(?) instead :)
   Project.find({}, function(err, projects) {
     Interest.find({}, function(err, interests) {
       Skill.find({}, function(err, skills) {
@@ -37,6 +37,10 @@ router.get('/resume', function(req, res) {
     res.contentType('application/pdf');
     res.send(data);
   });
+});
+
+router.get('/comingsoon', function(req, res) {
+  res.render('comingsoon');
 });
 
 module.exports = router;

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% import 'macros/navbar.html' as navbar %}
+
+{% block head %}
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="header-container">
+  {{ navbar.nav() }}
+</div>
+
+<div class="main-body-container" id="main-body">
+  <section class="info main-info">
+    <div class="container">
+    <h1 class="section-header">Coming soon!</h1>
+    </div>
+  </section>
+</div>
+
+{% endblock %}
