@@ -61,7 +61,7 @@ module.exports = {
   interests: [
     {
       'name': 'Open Source',
-      'description': 'I really like open source stuff! I\'m incredibly intrigued by he Open Source model of software development and the way in which it can spread knowledge, provide powerful tools accessible to all, and foster strong communities of developers united to work for a common cause. I\'ve made contributions to open source projects such as the EdX platform, and hope to continue contributing to the world of open source, both as an active developer on projects and as a creator of new open source technology.'
+      'description': 'I really like open source stuff. I\'m incredibly intrigued by the Open Source model of software development and the way in which it can spread knowledge, provide powerful tools accessible to all, and foster strong communities of developers united to work for a common cause. I\'ve made contributions to open source projects such as the EdX platform, and hope to continue contributing to the world of open source, both as an active developer on projects and as a creator of new open source technology.'
     },
     {
       'name': 'Graphic Novels/Manga',
