@@ -50,7 +50,7 @@ module.exports = {
     {
       'name': 'golang',
       'type': 'programming language',
-      'description': 'Such a fun new language with a cute as hell mascot to boot. I\'ve been wanting to pick up Go for a while now - ever since I got a chance to learn about it from some Paypal engineers who seemed absolutely infatuated with it - and finally got around to it recently. I\'ve immediately grown to love the completeness of its standard libraries, and I find its syntax and conventions quite nifty. I haven\'t dabbled with goroutines and multithreading it, but even without those specific language advantages, I can already see the allure of using go for new web applications.'
+      'description': 'Such a fun new language with one hell of a cute mascot. I\'ve been wanting to pick up Go for a while now - ever since I got a chance to learn about it from some Paypal engineers who seemed absolutely infatuated with it - and finally got around to it recently. I\'ve immediately grown to love the completeness of its standard libraries, and I find its syntax and conventions easy to work with. The more I use the language, the more I understand its allure for use on new web applications.'
     },
     {
       'name': 'mongoDB',
